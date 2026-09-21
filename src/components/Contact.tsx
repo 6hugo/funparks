@@ -1,5 +1,21 @@
 import { useState, type FormEvent } from 'react'
-import { Phone, Mail, Share2, MessageCircle, Send, CheckCircle } from 'lucide-react'
+import { Phone, Mail, MessageCircle, Send, CheckCircle } from 'lucide-react';
+
+const InstagramIcon = ({ className }: { className?: string }) => (
+  <svg 
+    className={className} 
+    viewBox="0 0 24 24" 
+    fill="none" 
+    stroke="currentColor" 
+    strokeWidth="2" 
+    strokeLinecap="round" 
+    strokeLinejoin="round"
+  >
+    <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+    <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+  </svg>
+);
 
 const CONTACT_INFO = [
   {
@@ -7,7 +23,7 @@ const CONTACT_INFO = [
     label: 'Teléfono / WhatsApp',
     value: '604 222 268',
     href: 'https://wa.me/34604222268',
-    color: '#25D366',
+    color: '#25D366', 
     bg: 'bg-green-50 border-green-200',
     iconBg: 'bg-gradient-to-br from-[#25D366] to-[#128C7E]',
   },
@@ -21,7 +37,7 @@ const CONTACT_INFO = [
     iconBg: 'bg-gradient-to-br from-[#2563EB] to-[#00C4CC]',
   },
   {
-    icon: Share2,
+    icon: InstagramIcon,
     label: 'Instagram',
     value: '@iconicparks_',
     href: 'https://instagram.com/iconicparks_',
@@ -30,7 +46,7 @@ const CONTACT_INFO = [
     iconBg: 'bg-gradient-to-br from-[#833ab4] via-[#fd1d1d] to-[#fcb045]',
   },
   {
-    icon: null as unknown as typeof Share2,  // custom SVG rendered below
+    icon: null as unknown as any,  // custom SVG rendered below
     label: 'TikTok',
     value: '@iconicparks',
     href: 'https://www.tiktok.com/@iconicparks?_r=1&_t=ZN-99tLqSkYzos',

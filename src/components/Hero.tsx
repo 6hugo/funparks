@@ -2,12 +2,6 @@ import { MessageCircle, CheckCircle, Eye } from 'lucide-react'
 
 const heroImage = '/images/parque1.jpeg'
 
-const BADGES = [
-  { label: '🇪🇸 Cobertura en toda España', color: 'bg-blue-100 text-blue-700 border-blue-200' },
-  { label: '✅ Materiales 100% Homologados', color: 'bg-green-100 text-green-700 border-green-200' },
-  { label: '🔧 Servicio Técnico y Reparación', color: 'bg-orange-100 text-orange-700 border-orange-200' },
-]
-
 export default function Hero() {
   return (
     <section
@@ -57,17 +51,6 @@ export default function Hero() {
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 pt-28 sm:pt-40 grid lg:grid-cols-12 gap-12 items-center w-full">
         {/* Left column — 6/12 cols */}
         <div className="lg:col-span-6">
-          {/* Trust badge row */}
-          <div className="flex flex-wrap gap-2 mb-6">
-            {BADGES.map((b) => (
-              <span
-                key={b.label}
-                className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-bold border backdrop-blur-sm ${b.color}`}
-              >
-                {b.label}
-              </span>
-            ))}
-          </div>
 
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white leading-tight mb-6">
             Fabricación, Montaje y{' '}

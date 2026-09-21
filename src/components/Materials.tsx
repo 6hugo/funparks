@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { MessageCircle, Package, ShieldCheck } from 'lucide-react'
+import { MessageCircle, ShieldCheck } from 'lucide-react'
 import { useLocalStorage } from '../hooks/useLocalStorage'
 import { DEFAULT_MATERIALS, type Material } from '../data/defaults'
 import { fetchMaterials } from '../lib/supabaseService'
@@ -79,15 +79,6 @@ function MaterialCard({ m }: { m: Material }) {
 
         {/* Description */}
         <p className="text-sm text-gray-400 leading-relaxed flex-1">{m.desc}</p>
-
-        {/* Tech detail chip */}
-        <span
-          className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-bold self-start"
-          style={{ background: `${m.color}18`, color: m.color, border: `1px solid ${m.color}30` }}
-        >
-          <Package className="w-3 h-3" />
-          {m.detail}
-        </span>
 
         {/* CTA */}
         <a
