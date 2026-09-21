@@ -35,12 +35,12 @@ export default function Projects() {
           <p className="text-lg text-gray-500 max-w-2xl mx-auto">
             Cada proyecto es único. Mira algunos de nuestros parques terminados en toda España.
           </p>
-          <div className="w-full max-w-sm mx-auto sm:max-w-none sm:inline-flex sm:flex-row items-center gap-3 mt-6 flex flex-col">
+          <div className="flex flex-col items-center justify-center gap-3 mt-6 w-full max-w-sm mx-auto">
             <a
               href="https://instagram.com/iconicparks_"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-full sm:w-auto flex items-center justify-center gap-2 px-6 py-3.5 rounded-2xl font-bold text-white text-sm shadow-lg transition-all hover:scale-105 hover:shadow-xl"
+              className="w-full flex items-center justify-center gap-2 px-6 py-3.5 rounded-2xl font-bold text-white text-sm shadow-lg transition-all hover:scale-105 hover:shadow-xl"
               style={{
                 background: 'linear-gradient(135deg, #833ab4, #fd1d1d, #fcb045)',
                 boxShadow: '0 4px 20px rgba(131,58,180,0.35)',
@@ -53,7 +53,7 @@ export default function Projects() {
               href="https://www.tiktok.com/@iconicparks?_r=1&_t=ZN-99tLqSkYzos"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-full sm:w-auto flex items-center justify-center gap-2 px-6 py-3.5 rounded-2xl font-bold text-white text-sm shadow-lg transition-all hover:scale-105 hover:shadow-xl"
+              className="w-full flex items-center justify-center gap-2 px-6 py-3.5 rounded-2xl font-bold text-white text-sm shadow-lg transition-all hover:scale-105 hover:shadow-xl"
               style={{
                 background: 'linear-gradient(135deg, #010101, #2d2d2d)',
                 boxShadow: '0 4px 20px rgba(0,0,0,0.45)',
